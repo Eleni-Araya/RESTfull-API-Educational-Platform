@@ -1,0 +1,30 @@
+
+
+###
+POST http://localhost:4007/users/signup
+Content-Type: application/json
+
+{
+    "fullname": { "first": "Eleni", "last": "Araya" },
+    "email": "eleni@miu.com",
+    "password": "eleni",
+    "active": "true",
+    "picture": {}
+}
+
+###
+POST http://localhost:4007/users/signin
+Content-Type: application/json
+
+{
+    "_id":"65f5282d29779f7fd7dca126",
+    "fullname": { "first": "Eleni", "last": "Araya" },
+    "email": "eleni@miu.com",
+    "password":"eleni",
+    "picture": {"path":"images/guest.png"}
+}
+
+
+###
+GET http://localhost:4007/users/signin
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NWY1MjgyZDI5Nzc5ZjdmZDdkY2ExMjYiLCJmdWxsbmFtZSI6eyJmaXJzdCI6IkVsZW5pIiwibGFzdCI6IkFyYXlhIn0sImlhdCI6MTcxMDU2NzEzNH0.72oV2hhEhuRp5badGVgOxUZFQr90Ne6OgWS57PFV-LY  
